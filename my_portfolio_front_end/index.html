@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+    </head>
+    <body>
+        <div id="htmx-trigger" onclick="htmx.triggers(this, 'click');">
+            {"Click me (HTMX)"}
+        </div>
+        <!-- Include the Yew application container -->
+        <div id="app"></div>
+        <!-- Load the Yew application -->
+        <script type="module" src="./pkg/my_portfolio_front_end.js"></script>
+    </body>
+</html>

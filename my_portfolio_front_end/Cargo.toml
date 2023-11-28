@@ -1,0 +1,12 @@
+[package]
+name = "my_portfolio_front_end"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "0.17.0"
+yew-router = "0.12.1"
+yewtil = "0.4.0"
+stdweb = "0.4.20"
