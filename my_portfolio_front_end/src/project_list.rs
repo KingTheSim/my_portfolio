@@ -14,5 +14,15 @@ pub enum Msg {
 }
 
 impl Component for ProjectList {
-    fn create
+    type Message = Msg;
+    type Properties = ();
+
+    fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
+        let fetch_task = Self::fetch_projects(&link);
+        Self {
+            link,
+            projects: Vec::new(),
+            fetch_task: 
+        }
+    }
 }
